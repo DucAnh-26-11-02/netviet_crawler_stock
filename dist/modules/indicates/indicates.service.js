@@ -64,7 +64,7 @@ let IndicateService = class IndicateService {
         }
         const quoteData = await this.getQuote(symbol);
         if (!quoteData) {
-            throw new Error(`Failed to crawl ${name} index`);
+            throw new Error(`Failed to crawl ${symbol}`);
         }
         const indicate = {
             id: '',
